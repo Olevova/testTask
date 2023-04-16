@@ -1,9 +1,9 @@
 {
-    "firstTask":[10,1001],
-    "secondTask":[1,20,2,16],
+    "firstTask":[10,200],
+    "secondTask":[1,20,2,16,55,16],
     "thirdTask":{
-        "first": 100,
-        "second": ["l","s","s"]
+        "first": 152,
+        "second": ["s","s","s"]
     },
-    "fourthTask": [5, 3, 2]
+    "fourthTask": [2, 1, 1]
 }

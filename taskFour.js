@@ -76,7 +76,7 @@ const plan = actorsIn( actorsNumber, r, c);
 // console.log(plan, 222, actorsNumber, r, c);
 // функція яка отримує план сцени та робить розрахунок 
 function result(matr) {
-    const result = []
+    const result = ["координати для розміщення прожектора",]
     for (let i = 0; i < matr.length; i+=1) {
       for (let j = 0; j < matr.length; j += 1) {
         console.log("Перевіряємо координати", i, j);
@@ -89,7 +89,7 @@ function result(matr) {
   }
   if (result.length > 0) {
     const answer = readAnswer();
-    const newAnswer = { ...answer, answer4: `прожектор краще розмістит в насупних координатах ${result}` }
+    const newAnswer = { ...answer, answer4: result }
     console.log(newAnswer);
     return fs.writeFileSync('./answer/answer.json', JSON.stringify(newAnswer));
   }
@@ -104,3 +104,4 @@ function result(matr) {
 };
 
 result(plan)
+// `прожектор краще розмістит в насупних координатах ${result}`

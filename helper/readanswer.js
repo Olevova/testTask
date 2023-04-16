@@ -6,7 +6,6 @@ export function readAnswer() {
     console.log(answerPath);
     try {
         const answer = JSON.parse(fs.readFileSync(answerPath));
-        console.log(answer);
         return answer
     }
     catch (error) {
